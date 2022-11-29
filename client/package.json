@@ -2,7 +2,7 @@
   "name": "Contact",
   "scripts": {
     "dev": "webpack-dev-server",
-    "build": "webpack",
+    "build": "webpack --production",
     "start": "webpack --watch"
   },
   "author": "2U",
