@@ -31,6 +31,23 @@ module.exports = () => {
         swSrc: './src-sw.js',
         swDest: 'src-sw.js',
       }),
+      new WebpackPwaManifest({
+        name: 'CONTACTSs Manifest Example',
+        short_name: 'Manifest',
+        description: 'Keep track of your contacts!',
+        background_color: '#7eb4e2',
+        theme_color: '#7eb4e2',
+        fingerprints: true,
+        // crossorigin: 'use-credentials',
+        start_url: './',
+        icons: [
+          {
+            src: path.resolve('src/images/logo.png'),
+            sizes: [96, 128, 192, 256, 384, 512], // multiple sizes
+            purpose: 'any maskable',
+          },
+        ],
+      }),
     ],
 
     // TODO: Add the correct modules
